@@ -23,7 +23,7 @@ services:
       - MOODLE_PASSWORD=admin@123
     healthcheck:
       test: "curl -f http://localhost:80/ || false"
-      interval: 4m
+      interval: 2m
       timeout: 10s
       retries: 3
       start_period: 40s
